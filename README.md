@@ -41,12 +41,12 @@ OPENAI_API_KEY=your_key_here
 
 2. Vectorize documents:
 ```bash
-poetry run python vectorize.py
+python vectorize.py
 ```
 
 3. Start the chat interface:
 ```bash
-poetry run python query_vector.py
+python query_vector.py
 ```
 
 4. Type questions about your documents. Type 'exit' to quit.
