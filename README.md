@@ -30,22 +30,14 @@ cd langchain-rag
 poetry install
 ```
 
-3. Create 
-
-.env
-
- file:
+3. Create ".env" file:
 ```bash
 OPENAI_API_KEY=your_key_here
 ```
 
 ## Usage
 
-1. Add your documents to the 
-
-docs
-
- directory
+1. Add your documents to the "docs" directory
 
 2. Vectorize documents:
 ```bash
@@ -108,5 +100,5 @@ This project is developed using Visual Studio Code with the following capabiliti
 - python-dotenv
 
 ## License
-MIT
+MIT License - See [LICENSE](LICENSE) for details
 ```
