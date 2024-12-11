@@ -5,14 +5,17 @@ A Retrieval-Augmented Generation (RAG) implementation using LangChain that enabl
 
 ## Features
 - Document vectorization using Sentence Transformers
-- Vector storage with ChromaDB 
+- Local vector storage with ChromaDB 
 - Conversational RAG with chat history
-- Support for OpenAI GPT models
+- Support for OpenAI GPT models (or Ollama models with slight modifications)
 - Color-coded interactive CLI interface
 
 ## Prerequisites
 - Python 3.12+
 - Poetry for dependency management
+```bash
+pip install poetry
+``` 
 - OpenAI API key
 - Documents to query (place in `docs/` directory)
 - macOS or Linux operating system
@@ -27,12 +30,14 @@ cd langchain-rag
 
 2. Install dependencies with Poetry:
 ```bash
-poetry install
+poetry install --no-root
 ```
 
-3. Create ".env" file:
+3. Create ".env" file and add OPENAI_API_KEY and, optionally, Ollama info:
 ```bash
-OPENAI_API_KEY=your_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+OLLAMA_HOST=http://localhost
+OLLAMA_PORT=11434
 ```
 4. Create a "docs" folder in the root of the project
 ```bash
@@ -47,17 +52,19 @@ mkdir ./docs
 poetry shell
 ```
 
-5. Vectorize documents:
+3. Vectorize documents:
 ```bash
 python vectorize.py
 ```
 
-3. Start the chat interface:
+4. Start the chat interface:
 ```bash
 python query_vector.py
 ```
 
-4. Type questions about your documents. Type 'exit' to quit.
+5. Type questions about your documents. 
+
+6. Type 'exit' to quit.
 
 ## Development
 
