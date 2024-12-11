@@ -95,7 +95,7 @@ This project is developed using Visual Studio Code with the following capabiliti
 ├── vectorize.py      # Document processing and vectorization
 ├── constants.py      # Terminal color constants
 ├── docs/            # Source documents directory
-├── db/              # Vector store database
+├── db/              # Vector store database - directory created upon execution
 ├── poetry.lock      # Poetry dependency lock file
 └── pyproject.toml   # Project configuration
 ```
