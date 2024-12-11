@@ -34,12 +34,20 @@ poetry install
 ```bash
 OPENAI_API_KEY=your_key_here
 ```
-
+4. Create a "docs" folder in the root of the project
+```bash
+mkdir ./docs
+```
 ## Usage
 
 1. Add your documents to the "docs" directory
 
-2. Vectorize documents:
+2. Initialize poetry shell
+```bash
+poetry shell
+```
+
+5. Vectorize documents:
 ```bash
 python vectorize.py
 ```
