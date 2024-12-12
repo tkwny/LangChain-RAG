@@ -36,6 +36,7 @@ poetry install --no-root
 3. Create ".env" file and add OPENAI_API_KEY and, optionally, Ollama info:
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
+OLLAMA_API_KEY=fake-ollama-api-key
 OLLAMA_HOST=http://localhost
 OLLAMA_PORT=11434
 ```
