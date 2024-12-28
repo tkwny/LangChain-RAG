@@ -16,8 +16,7 @@ from langchain_ollama import  ChatOllama
 load_dotenv()
 
 # Define persistent path for db/vector store
-current_dir = os.path.dirname(os.path.abspath(__file__))
-db_dir = os.path.join(current_dir, "db", "chroma_db_docs")
+db_dir = os.path.join(os.getcwd(), "db", "chroma_db_docs")
 
 # Define the embedding model
 # Make sure you use the same embeddings used to populate the vector store (vectorize.py)

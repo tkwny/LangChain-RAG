@@ -13,9 +13,8 @@ from langchain_ollama import OllamaEmbeddings
 load_dotenv()
 
 # Define the directory that contains the text (.txt) files and the persistent (vector db) directory
-current_dir = os.path.dirname(os.path.abspath(__file__))
-docs_dir = os.path.join(current_dir, "docs")
-db_dir = os.path.join(current_dir, "db", "chroma_db_docs")
+docs_dir = os.path.join(os.getcwd(), "docs")
+db_dir = os.path.join(os.getcwd(), "db", "chroma_db_docs")
 
 # Check if the vector store already exists
 if not os.path.exists(db_dir):
